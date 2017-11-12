@@ -7,10 +7,41 @@
 <body>
 
   <script>
-  
-    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+    //start with strings, numbers and booleans
+    let age = 100;
+    let age2 = age;
+    console.log(age, age2);
+    age = 200;
 
-  
+    // let name = "gulistan";
+    // let name2 = name;
+    // console.log(name, name2);
+    // name = "buket";
+    // console.log(name, name2);
+
+     // Let's say we have an array
+    
+    const players = ['gulistan', 'merve', 'armagan', 'esra'];
+    const team = players;
+
+    console.log(players, team);
+
+    team[3] = "ayse";
+    console.log(players, team);
+    //if you pass at nothing to slice function, it will take copy of actual array
+    const team2 = players.slice();
+
+    //you can also creat a copy of array with blank array and concat function
+    const team3 = [].concat(players);
+
+    //ES6 spread
+    const team4 = [...players];
+    team4[3] = "olalalalalaa!";
+
+    //you can also you array.from function
+    const team5 = Array.from(players);
+
+        
   </script>
 
 </body>
