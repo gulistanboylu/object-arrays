@@ -37,9 +37,19 @@
     //ES6 spread
     const team4 = [...players];
     team4[3] = "olalalalalaa!";
+    
+    //object reference
+    const person = {
+      name: 'gulistan boylu',
+      age: 28
+    }
+   
+    const captain = person;
+    captain.number = 99;
 
-    //you can also you array.from function
-    const team5 = Array.from(players);
+    //instead of reference take copy an object
+    const cap2 = Object.assign({}, person, { number: 99 });
+    
 
         
   </script>
